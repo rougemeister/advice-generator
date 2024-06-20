@@ -14,9 +14,19 @@
 </head>
 
 <body>
+
   <div class="advice-generator">
     <h1 id="advice-id" class="advice-id">Advice #</h1>
-    <p id="advice-text" class="advice-text">Welcome to my random advice generator app!</p>
+    <div class="advice-container">
+        <p id="advice-text" class="advice-text">Welcome to my random advice generator app!</p>
+        <div style="display: none;" class="animation">
+            <span>|</span>
+            <span style="--delay: 0.1s">|</span>
+            <span style="--delay: 0.3s">|</span>
+            <span style="--delay: 0.4s">|</span>
+            <span style="--delay: 0.5s">|</span>
+          </div>
+    </div>
     <picture>
       <source srcset="images/pattern-divider-desktop.svg">
       <img src="images/pattern-divider-mobile.svg" alt="divider" class="divider">
@@ -25,6 +35,8 @@
       <img src="images/icon-dice.svg" alt="dice icon" id="dice-icon" class="dice-icon">
     </div>
   </div>
+
+
 
 </body>
 
