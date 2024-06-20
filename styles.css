@@ -94,3 +94,34 @@ body {
     padding: 0 2rem;
     padding-top: 1.6rem;
 }
+
+.advice-container {
+    min-height: 120px;
+}
+
+
+/* Animations */
+.animation {
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  @keyframes arrows {
+    0%,
+    20% {
+      color: rgb(255, 255, 255);
+      transform: translateY(0);
+    }
+    10% {
+      color: 53FFAA;;
+      transform: translateY(5px);
+    }
+  }
+  
+  span {
+    margin: 0 2px 0 2px;
+    --delay: 0s;
+    animation: arrows 1s var(--delay) infinite ease-in;
+  }
