@@ -29,3 +29,44 @@ button {
   background: none;
   cursor: pointer;
 }
+
+body {
+    min-height: 100vh;
+    background-color: #202733;
+    padding: 0 1.6rem;
+    padding-bottom: 18rem;
+    font-family: 'Manrope', sans-serif;
+}
+
+.advice-generator {
+    background-color: #313A48;
+    max-width: 55rem;
+    margin: 0 auto;
+    transform: translateY(20vh);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.4rem;
+    box-shadow: 30px 40px 20px rgba(0, 0, 0, 0.100202);
+    border-radius: 10px;
+}
+
+.advice-id {
+    color: #53FFAA;
+    font-size: 1.1rem;
+    font-weight: 800;
+    line-height: 1.5rem;
+    letter-spacing: 3.45714px;
+    text-transform: uppercase;
+    padding-top: 4rem;
+}
+
+.advice-text {
+    color: #FFF;
+    font-size: 2.4rem;
+    font-weight: 800;
+    line-height: 3.3rem;
+    letter-spacing: -0.257143px;
+    text-align: center;
+    padding: 0  2vw;
+}
