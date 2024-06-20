@@ -11,13 +11,14 @@ const getAdvice = async () => {
   const advice = res.data.slip.advice;
   adviceText.innerText = `"${advice}"`;
   adviceId.innerText = `Advice #${id}`;
+  adviceText.classList.remove('red')
 }
 
   catch (e) {
     adviceText.textContent = "";
     animationEl.style.display = 'flex'
     setTimeout(()=>{
-        adviceText.style.color = 'red'
+        adviceText.classList.add('red')
         adviceText.textContent = 'Error retrieving data! Retry by clicking the dice button'
         animationEl.style.display = 'none'
     }, 5000)

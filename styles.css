@@ -99,6 +99,9 @@ body {
     min-height: 120px;
 }
 
+.red {
+  color: red;
+}
 
 /* Animations */
 .animation {
