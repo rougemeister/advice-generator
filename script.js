@@ -16,6 +16,11 @@ const getAdvice = async () => {
   catch (e) {
     adviceText.textContent = "";
     animationEl.style.display = 'flex'
+    setTimeout(()=>{
+        adviceText.style.color = 'red'
+        adviceText.textContent = 'Error retrieving data! Retry by clicking the dice button'
+        animationEl.style.display = 'none'
+    }, 5000)
   } 
 };
 
